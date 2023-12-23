@@ -1,4 +1,5 @@
 "use client";
+import Companies from "../components/Home/Companies/Companies";
 import HomeHero from "../components/Home/Hero/hero";
 import Meta from "../utils/Meta";
 
@@ -11,6 +12,7 @@ const Page = () => {
         keywords="Online Learning, E-Learning, Skill Development, Programming, ReactJs, NodeJs, MERN"
       />
       <HomeHero/>
+      <Companies/>
     </div>
   );
 };
