@@ -1,4 +1,6 @@
 "use client";
+import Achievement from "../components/Home/Achivement/Achivement";
+import Categories from "../components/Home/Categories/Categories";
 import Companies from "../components/Home/Companies/Companies";
 import Courses from "../components/Home/Course/Courses";
 import HomeHero from "../components/Home/Hero/hero";
@@ -15,7 +17,9 @@ const Page = () => {
       <HomeHero/>
       {/* <Hero2/> */}
       <Companies/>
+      <Categories/>
       <Courses/>
+      <Achievement/>
     </div>
   );
 };
