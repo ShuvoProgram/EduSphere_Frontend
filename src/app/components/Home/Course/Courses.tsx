@@ -1,6 +1,7 @@
 import { useGetUserAllCourseQuery } from "../../../redux/api/courses/coursesApi";
-// import CourseCard from "./CourseCard";
+import CourseCard from "./CourseCard";
 import { useTheme } from "next-themes";
+import { CourseCard2 } from "./CourseCard2";
 
 const Courses = () => {
   const { data, isLoading, isSuccess } = useGetUserAllCourseQuery(undefined);
@@ -23,9 +24,9 @@ const Courses = () => {
       <br />
       <br />
       <div className="grid grid-cols-1 gap-[20px] md:grid-cols-2 md:gap-[25px] lg:grid-cols-3 1500px:grid-cols-4 1500px:gap-[35px] mb-12 border-0">
-        {/* {data?.data.map((course: any) => (
-          <CourseCard key={course._id} course={course} />
-        ))} */}
+        {data?.data.map((course: any) => (
+          <CourseCard2 key={course._id} course={course} />
+        ))}
       </div>
     </div>
   );
