@@ -1,5 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import logo from '../../../public/assets/images/logo.png';
 import React from "react";
 
 type Props = {
@@ -49,9 +51,9 @@ const NavItems = ({ activeItem, isMobile, setActiveItem }: Props) => {
             <Link
               href={"/"}
               passHref
-              className="text-[25px] font-Poppins font-[500] text-black dark:text-white"
+              className="text-[25px] font-Poppins font-[500]"
             >
-              Learnify
+              <Image src={logo} alt="logo" width={200} height={100}/>
             </Link>
           </div>
           {navItemsData.map((nav, index) => (

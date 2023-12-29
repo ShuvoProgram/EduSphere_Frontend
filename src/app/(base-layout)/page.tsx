@@ -4,6 +4,7 @@ import Categories from "../components/Home/Categories/Categories";
 import Companies from "../components/Home/Companies/Companies";
 import Courses from "../components/Home/Course/Courses";
 import HomeHero from "../components/Home/Hero/hero";
+import Testimonial from "../components/Home/Testimonial/Testimonial";
 import Meta from "../utils/Meta";
 
 const Page = () => {
@@ -20,6 +21,7 @@ const Page = () => {
       <Categories/>
       <Courses/>
       <Achievement/>
+      <Testimonial/>
     </div>
   );
 };

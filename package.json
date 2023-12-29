@@ -20,6 +20,7 @@
     "axios": "^1.6.2",
     "date-fns": "^3.0.6",
     "formik": "^2.4.5",
+    "framer-motion": "^10.16.16",
     "next": "14.0.4",
     "next-auth": "^4.24.5",
     "next-themes": "^0.2.1",
@@ -30,6 +31,7 @@
     "react-pro-sidebar": "^1.1.0-alpha.1",
     "react-redux": "^9.0.4",
     "react-scroll": "^1.9.0",
+    "react-slick": "^0.29.0",
     "recharts": "^2.10.3"
   },
   "devDependencies": {
@@ -37,6 +39,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "@types/react-scroll": "^1.8.10",
+    "@types/react-slick": "^0.23.13",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.0.4",

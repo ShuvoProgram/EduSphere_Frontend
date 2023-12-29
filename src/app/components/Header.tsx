@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { motion } from 'framer-motion';
 import React, { useEffect, useState } from "react";
 import NavItems from "../utils/NavItems";
 import ThemeSwitcher from "../utils/ThemeSwitcher";
@@ -11,6 +12,7 @@ import CustomModal from "../utils/CustomModal";
 import { useAppSelector } from "../redux/hook";
 import Image from "next/image";
 // import avatar from "../../public/assets/avatar.png";
+import logo from '../../../public/assets/images/logo.png';
 import dynamic from "next/dynamic";
 import { useSession } from "next-auth/react";
 import { useSocialAuthMutation } from "../redux/api/auth/authApi";
@@ -68,19 +70,19 @@ const Header = () => {
       <div
         className={`${
           active
-            ? "bg-white dark:bg-opacity-50 dark:bg-gradient-to-b dark:from-gray-900 dark:to-black fixed top-0 left-0 w-full  h-[80px] z-[80] border-b dark:border-[#ffffff1c]"
-            : " w-full border-b dark:border-[#ffffff1c] h-[80px] z-[999999] dark:shadow"
+            ? "backdrop-blur-xl bg-white/70 dark:bg-opacity-50 dark:bg-gradient-to-b dark:from-gray-900 dark:to-black fixed top-0 left-0 w-full  h-[80px] z-[80] border-b dark:border-[#ffffff1c]"
+            : " w-full border-b dark:border-[#ffffff1c] z-[999999] dark:shadow"
         } `}
       >
         <div className="w-[95%] 800px:w-[92%] m-auto py-2 h-full">
-          <div className="w-full h-[80px] flex items-center justify-between p-3">
+          <div className="w-full flex items-center justify-between p-2">
             <div>
               <Link
                 href={"/"}
                 passHref
-                className="text-[25px] font-Poppins font-[500] text-black dark:text-white"
+                className="text-[25px] font-Poppins font-[500]"
               >
-                Learnify
+               <Image src={logo} alt="logo" width={200} height={100}/>
               </Link>
             </div>
             <div className="flex items-center">
@@ -133,7 +135,7 @@ const Header = () => {
             id="screen"
             onClick={handleClose}
           >
-            <div className="w-[70%] fixed z-[999] h-screen bg-white dark:bg-slate-900 dark:bg-opacity-90 top-0 right-0">
+            <div className="w-[70%] fixed z-[999] h-screen backdrop-blur-xl bg-white/90 dark:bg-slate-900 dark:bg-opacity-90 top-0 right-0">
               <NavItems
                 activeItem={activeItem}
                 isMobile={true}
@@ -167,7 +169,7 @@ const Header = () => {
               <br />
 
               <p className="text-[16px] px-2 pl-5 text-black dark:text-white">
-                Copyright 2023 Learnify
+                Copyright {new Date().getFullYear()} EduSphere
               </p>
             </div>
           </div>
