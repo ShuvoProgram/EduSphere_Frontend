@@ -1,0 +1,10 @@
+.text-gradient-dark {
+  background: linear-gradient(45deg, #f8f8f8, #37a39a, #3a3a3a);
+  background-clip: text;
+  color: transparent;
+}
+.text-gradient {
+  background: linear-gradient(45deg, #3a3a3a, #37a39a, #f8f8f8);
+  background-clip: text;
+  color: transparent;
+}
