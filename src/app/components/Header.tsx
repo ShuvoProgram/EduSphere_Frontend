@@ -1,17 +1,16 @@
 "use client";
 import Link from "next/link";
-import { motion } from 'framer-motion';
 import React, { useEffect, useState } from "react";
 import NavItems from "../utils/NavItems";
 import ThemeSwitcher from "../utils/ThemeSwitcher";
 import { HiOutlineMenuAlt3, HiOutlineUserCircle } from "react-icons/hi";
 import CustomModal from "../utils/CustomModal";
-// import Login from "./Auth/Login";
-// import SignUp from "./Auth/SignUp";
-// import Verification from "./Auth/Verification";
+import Login from "./Auth/Login";
+import SignUp from "./Auth/SignUp";
+import Verification from "./Auth/Verification";
 import { useAppSelector } from "../redux/hook";
 import Image from "next/image";
-// import avatar from "../../public/assets/avatar.png";
+import avatar from "../../../public/assets/images/avatar.png";
 import logo from '../../../public/assets/images/logo.png';
 import dynamic from "next/dynamic";
 import { useSession } from "next-auth/react";
@@ -93,7 +92,7 @@ const Header = () => {
               />
               <ThemeSwitcher />
 
-              {/* {user ? (
+              {user ? (
                 <div className="hidden 800px:block">
                   <Link href={"/profile"}>
                     <Image
@@ -116,7 +115,7 @@ const Header = () => {
                   className={`hidden 800px:block cursor-pointer dark:text-white text-black `}
                   onClick={() => setOpen(true)}
                 />
-              )} */}
+              )}
               {/* for mobile */}
               <div className="800px:hidden">
                 <HiOutlineMenuAlt3
@@ -141,7 +140,7 @@ const Header = () => {
                 isMobile={true}
                 setActiveItem={setActiveItem}
               />
-              {/* {user ? (
+              {user ? (
                 <button className="w-full py-5 pl-5 ">
                   <Link href={"profile"}>
                     <Image
@@ -163,7 +162,7 @@ const Header = () => {
                     className="cursor-pointer  text-black dark:text-white"
                   />
                 </button>
-              )} */}
+              )}
 
               <br />
               <br />
@@ -175,7 +174,7 @@ const Header = () => {
           </div>
         )}
       </div>
-      {/* {route === "Login" && (
+      {route === "Login" && (
         <>
           {open && (
             <CustomModal
@@ -213,7 +212,7 @@ const Header = () => {
             />
           )}
         </>
-      )} */}
+      )}
     </div>
   );
 };

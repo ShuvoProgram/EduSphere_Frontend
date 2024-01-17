@@ -1,6 +1,5 @@
 "use client";
 import "./globals.css";
-
 import { Poppins } from "next/font/google";
 import { Josefin_Sans } from "next/font/google";
 import { ThemeProvider } from "./utils/theme-provider";
@@ -34,9 +33,10 @@ export default function RootLayout({ children }: Props) {
           className={`${poppins.variable} ${josefin.variable} !bg-white bg-no-repeat dark:bg-gradient-to-b dark:from-gray-900 dark:to-black duration-300`}
         >
           <SessionProvider>
+
             <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-              <LoaderProvider>{children}</LoaderProvider>
-              <Toaster />
+                <LoaderProvider>{children}</LoaderProvider>
+                <Toaster />
             </ThemeProvider>
           </SessionProvider>
         </body>
