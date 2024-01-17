@@ -8,6 +8,8 @@ import { SessionProvider } from "next-auth/react";
 import LoaderProvider from "./LoaderProvider";
 import { ReactNode } from "react";
 import ReduxProvider from "./ReduxProvider";
+import "swiper/css";
+import "swiper/css/bundle";
 
 type Props = {
   children: ReactNode;

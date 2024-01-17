@@ -6,6 +6,7 @@ import CategoriesDemo from "../components/Home/Categories/Categories";
 import Companies from "../components/Home/Companies/Companies";
 import Courses from "../components/Home/Course/Courses";
 import Testimonial from "../components/Home/Testimonial/Testimonial";
+import TestimonialDemo from "../components/Home/Testimonial/Testimonial";
 import Meta from "../utils/Meta";
 
 const Page = () => {
@@ -21,7 +22,8 @@ const Page = () => {
       <Categories/>
       <Courses/>
       <Achievement/>
-      <Testimonial/>
+      {/* <Testimonial/> */}
+      <TestimonialDemo/>
     </div>
   );
 };

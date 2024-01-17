@@ -821,3 +821,129 @@ Courses Area Style
   height: 1px;
   background-color: #098b99;
 }
+
+/*
+Testimonial Area Style
+======================================================*/
+.testimonial-area {
+  overflow: hidden;
+}
+
+.testimonials-conetent {
+  position: relative;
+  z-index: 1;
+}
+
+.testimonials-conetent h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  line-height: 60px;
+  letter-spacing: -1px;
+}
+
+.testimonials-conetent .testimonial-shape {
+  position: absolute;
+  bottom: 105px;
+  right: 0;
+  z-index: -1;
+}
+
+.single-testimonial {
+  margin-bottom: 30px;
+}
+
+.single-testimonial .testimonial-conetent {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 30px 30px 30px 0px;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.single-testimonial .testimonial-conetent h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #098b99;
+}
+
+.single-testimonial .testimonial-info img {
+  width: 55px;
+  height: 55px;
+}
+
+.single-testimonial .testimonial-info h4 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.single-testimonial .testimonial-info h4 span {
+  color: #646464;
+}
+
+.single-testimonial.m-30 {
+  margin: 30px;
+}
+
+.single-testimonial.mr-100 {
+  margin-right: 100px;
+}
+
+.testimonial-img {
+  margin-bottom: 30px;
+  margin-right: 100px;
+}
+
+.testimonials-slide .swiper-pagination {
+  position: initial;
+}
+
+.testimonials-slide .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+
+.testimonials-slide .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #098b99;
+}
+
+.testimonials-slide-list-one.owl-carousel .owl-item img {
+  width: auto;
+}
+
+.testimonials-slide-list-one .single-testimonial .testimonial-conetent h3 {
+  color: #098b99;
+  font-size: 20px;
+}
+
+.testimonials-slide-list-two.owl-carousel .owl-item img {
+  width: auto;
+}
+
+.testimonials-slide-list-two.owl-carousel.owl-rtl {
+  direction: rtl;
+  text-align: left;
+}
+
+.testimonials-slide-list-two .testimonial-info {
+  position: relative;
+  display: block !important;
+  padding-left: 70px;
+}
+
+.testimonials-slide-list-two .testimonial-info img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.testimonials-slide-list-two .testimonial-info h4 {
+  position: relative;
+  top: 18px;
+}
+
+.testimonials-slide-list-two .single-testimonial .testimonial-conetent h3 {
+  color: #098b99;
+  font-size: 20px;
+}
