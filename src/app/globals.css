@@ -739,3 +739,85 @@ Courses Area Style
   padding-right: 35px;
   background-image: url(/images/icon/down-arrow1.svg);
 }
+
+/* Categorie Area Style */
+
+.single-categorie {
+  background: #ffffff;
+  border: 1px solid #F1F1F1;
+  border-radius: 5px;
+  padding: 20px 30px 15px 30px;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.single-categorie::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(315deg, #098B99 0%, #057FA8 100%);
+  border-radius: 5px;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.single-categorie h3 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 0;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.single-categorie i {
+  color: #098b99;
+  font-size: 20px;
+  line-height: 1;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.single-categorie:hover {
+  border-color: #098b99;
+}
+
+.single-categorie:hover::before {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+.single-categorie:hover h3 {
+  color: #ffffff;
+}
+
+.single-categorie:hover i {
+  color: #ffffff;
+}
+
+.all-browse {
+  font-size: 18px;
+}
+
+.all-browse .read-more {
+  position: relative;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.all-browse .read-more::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 86%;
+  height: 1px;
+  background-color: #098b99;
+}

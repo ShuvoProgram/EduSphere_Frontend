@@ -1,25 +1,53 @@
 import React from 'react';
-import {BsArrowUpRight} from 'react-icons/bs'
-// import Icon from 'react-icons'
+import { motion } from 'framer-motion';
+import Link from 'next/link';
 
-
-type Props = {
-  title: string;
-  icon?: any;
-};
-
-function CategoryCard({icon,title}: Props) {
+function CategoryCard({ categories }: any) {
   return (
-    <div className='category bg-white p-4 shadow-lg rounded-md flex items-center gap-4 justify-between border border-transparent hover:border-[#1a9068] hover:cursor-pointer group/edit'>
-    <div className="flex gap-4 text-black">
-        {icon}
-        <h1 className="text-lg text-black font-semibold">{title}</h1>
+    <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+      {categories?.length > 0 &&
+        categories.map((cat: any) => (
+          <motion.div
+            key={cat.id}
+            className="col-span-1 p-4 rounded-lg transition-transform transform hover:scale-105"
+            whileHover={{
+              scale: 1.02,
+              originX: 0,
+              transition: { duration: 0.5 },
+            }}
+            initial="hidden"
+            whileInView="visible"
+            transition={{
+              type: 'spring',
+              duration: 1,
+              bounce: 0.3,
+            }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 },
+            }}
+          >
+            <Link href={`/category/${cat.id}`}>
+              <span className="single-categorie block p-4 shadow-md cursor-pointer">
+                <h3 className="text-xl font-semibold mb-2">{cat.title}</h3>
+                <i className="flaticon-developer"></i>
+              </span>
+            </Link>
+          </motion.div>
+        ))}
+
+      <div className="col-span-full text-center">
+        <p className="text-lg">
+          Browse All{' '}
+          <Link href="/courses">
+            <span className="text-blue-500 cursor-pointer read-more">
+              Courses <i className="ri-arrow-right-line"></i>
+            </span>
+          </Link>
+        </p>
+      </div>
     </div>
-    <div className="rounded-lg p-3 group-hover/edit">
-        <BsArrowUpRight size={30} style={{ color:'#1a9068' }} className='icon'/>
-    </div>
-</div>
-  )
+  );
 }
 
-export default CategoryCard
+export default CategoryCard;
