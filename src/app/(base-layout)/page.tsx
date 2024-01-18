@@ -1,5 +1,5 @@
 "use client";
-import Achievement from "../components/Home/Achivement/Achivement";
+import Achievements from "../components/Home/Achivement/Achivements";
 import Banner from "../components/Home/Banner/Banner";
 import Categories from "../components/Home/Categories/Categories";
 import Courses from "../components/Home/Course/Courses";
@@ -23,7 +23,7 @@ const Page = () => {
       <Categories/>
       <Transform/>
       <Features/>
-      <Achievement/>
+      <Achievements />
       <Partners/>
       <Testimonial/>
     </div>

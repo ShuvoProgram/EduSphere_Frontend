@@ -27,6 +27,11 @@
     border-radius: 10px;
   }
 
+  body {
+    font-size: 16px;
+    font-family: "Josefin Sans", sans-serif;
+    color: #646464;
+  }
 
   /*
 Banner Area Style
@@ -1334,4 +1339,89 @@ Features Area Style
 
 .single-features:hover .features-link .features-btn {
   opacity: 1;
+}
+
+/*
+Teaching Area Style
+======================================================*/
+.teaching-area {
+  overflow: auto;
+}
+
+.teaching-content {
+  margin-right: 80px;
+}
+
+.teaching-content h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  line-height: 60px;
+  letter-spacing: -1px;
+}
+
+.teaching-content p {
+  margin-bottom: 30px;
+}
+
+.teaching-content ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+.teaching-content ul li {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.03);
+          box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.03);
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 24px;
+  cursor: pointer;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.teaching-content ul li:last-child {
+  margin-bottom: 0;
+}
+
+.teaching-content ul li h3 {
+  font-size: 16px;
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+
+.teaching-content ul li:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.teaching-content .default-btn {
+  margin-top: 30px;
+}
+
+.teaching-img {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.teaching-img::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 515px;
+  height: 515px;
+  background: linear-gradient(134.98deg, rgba(155, 212, 167, 0.4) 14.29%, rgba(48, 158, 169, 0.1) 100%);
+  border-radius: 50%;
+  z-index: -1;
+  margin: auto;
+}
+
+.teaching-img .teaching-img-shape {
+  margin-bottom: 20px;
+  -webkit-animation: off-on 10s infinite linear;
+          animation: off-on 10s infinite linear;
 }

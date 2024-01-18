@@ -16,11 +16,11 @@ type Props = {
   children: ReactNode;
 };
 
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-Poppins",
-});
+// const poppins = Poppins({
+//   subsets: ["latin"],
+//   weight: ["400", "500", "600", "700"],
+//   variable: "--font-Poppins",
+// });
 
 const josefin = Josefin_Sans({
   subsets: ["latin"],
@@ -33,7 +33,7 @@ export default function RootLayout({ children }: Props) {
     <ReduxProvider>
       <html lang="en">
         <body
-          className={`${poppins.variable} ${josefin.variable} !bg-white bg-no-repeat dark:bg-gradient-to-b dark:from-gray-900 dark:to-black duration-300`}
+          className={`${josefin.variable} !bg-white bg-no-repeat dark:bg-gradient-to-b dark:from-gray-900 dark:to-black duration-300`}
         >
           <SessionProvider>
 

@@ -37,10 +37,10 @@ function CategoryCard({ categories }: any) {
         ))}
 
       <div className="col-span-full text-center">
-        <p className="text-lg">
+        <p className="text-base">
           Browse All{' '}
           <Link href="/courses">
-            <span className="text-blue-500 cursor-pointer read-more">
+            <span className="text-[#208486] cursor-pointer read-more">
               Courses <i className="ri-arrow-right-line"></i>
             </span>
           </Link>

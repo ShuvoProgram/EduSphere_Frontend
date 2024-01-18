@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import { FaPlay } from "react-icons/fa";
 
 function Transform() {
   return (
@@ -24,7 +25,7 @@ function Transform() {
                   />
                   <Link href="/learning/my-courses">
                     <span className="video-btns popup-youtube cursor-pointer">
-                      <i className="ri-play-circle-fill text-white"></i>
+                    <FaPlay className="ri-play-circle-fill text-white"/>
                     </span>
                   </Link>
                 </div>
@@ -44,7 +45,7 @@ function Transform() {
               </div>
 
               <Link href="/courses">
-                <span className="inline-block mt-4 px-6 py-3 bg-blue-500 text-white rounded-md transition duration-300 ease-in-out hover:bg-blue-600 cursor-pointer">
+                <span className="inline-block mt-4 px-6 py-3 bg-[#208486] text-white rounded-md transition duration-300 ease-in-out hover:bg-[#449c9d] cursor-pointer">
                   Find Out How
                 </span>
               </Link>
