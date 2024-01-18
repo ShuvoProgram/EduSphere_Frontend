@@ -32,6 +32,9 @@
       width: 100%;
       height: 100%;
     }
+    .shape {
+      display: none;
+    }
 
   }
 
@@ -78,6 +81,9 @@
     .transform-img::before {
       right: 0;
       margin: auto;
+    }
+    .shape {
+      display: none;
     }
 
   }

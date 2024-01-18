@@ -3,6 +3,7 @@ import Achievement from "../components/Home/Achivement/Achivement";
 import Banner from "../components/Home/Banner/Banner";
 import Categories from "../components/Home/Categories/Categories";
 import Courses from "../components/Home/Course/Courses";
+import Features from "../components/Home/Features/Features";
 import Partners from "../components/Home/Partners/Partners";
 import Testimonial from "../components/Home/Testimonial/Testimonial";
 import Transform from "../components/Home/Transform/Transform";
@@ -18,14 +19,13 @@ const Page = () => {
         keywords="Online Learning, E-Learning, Skill Development, Programming, ReactJs, NodeJs, MERN"
       />
       <Banner/>
-      {/* <Companies/> */}
-   
       <Courses/>
       <Categories/>
       <Transform/>
+      <Features/>
       <Achievement/>
-      <Testimonial/>
       <Partners/>
+      <Testimonial/>
     </div>
   );
 };
