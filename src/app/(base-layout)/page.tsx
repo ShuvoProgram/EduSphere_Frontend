@@ -2,11 +2,10 @@
 import Achievement from "../components/Home/Achivement/Achivement";
 import Banner from "../components/Home/Banner/Banner";
 import Categories from "../components/Home/Categories/Categories";
-import CategoriesDemo from "../components/Home/Categories/Categories";
 import Companies from "../components/Home/Companies/Companies";
 import Courses from "../components/Home/Course/Courses";
 import Testimonial from "../components/Home/Testimonial/Testimonial";
-import TestimonialDemo from "../components/Home/Testimonial/Testimonial";
+
 import Meta from "../utils/Meta";
 
 const Page = () => {
@@ -22,8 +21,7 @@ const Page = () => {
       <Categories/>
       <Courses/>
       <Achievement/>
-      {/* <Testimonial/> */}
-      <TestimonialDemo/>
+      <Testimonial/>
     </div>
   );
 };
