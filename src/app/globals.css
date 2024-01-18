@@ -1115,3 +1115,138 @@ Partner Area Style
   margin: auto;
   width: auto;
 }
+
+/*
+Transform Area Style
+======================================================*/
+.transform-area {
+  overflow: hidden;
+}
+
+.transform-conetnt {
+  margin-right: 30px;
+}
+
+.transform-conetnt h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+  line-height: 60px;
+  letter-spacing: -1px;
+}
+
+.transform-conetnt h2 span {
+  color: #098b99;
+}
+
+.transform-conetnt p {
+  margin-bottom: 30px;
+}
+
+.single-transform {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.single-transform .transform-video-img {
+  position: relative;
+}
+
+.single-transform .transform-video-img img {
+  border-radius: 5px;
+}
+
+.single-transform .transform-video-img .video-btns {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.single-transform .transform-video-img .video-btns i {
+  font-size: 40px;
+  color: #ffffff;
+  line-height: 1;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+}
+
+.single-transform .transform-video-img .video-btns i::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 30px;
+  height: 30px;
+  background-color: #098b99;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.single-transform .transform-video-content {
+  margin-left: 20px;
+}
+
+.single-transform .transform-video-content h3 {
+  font-size: 18px;
+}
+
+.single-transform .transform-video-content h3 a {
+  color: #0d0c0c;
+}
+
+.single-transform .transform-video-content ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.single-transform .transform-video-content ul li {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.single-transform .transform-video-content ul li a.active {
+  color: #098b99;
+}
+
+.single-transform:hover h3 a {
+  color: #098b99;
+}
+
+.transform-img {
+  text-align: center;
+  margin-left: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.transform-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 515px;
+  height: 515px;
+  background: linear-gradient(134.98deg, rgba(155, 212, 167, 0.4) 14.29%, rgba(48, 158, 169, 0.1) 100%);
+  border-radius: 50%;
+  z-index: -1;
+  margin: auto;
+}

@@ -1,0 +1,99 @@
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+    /* Transform Style */
+    .transform-conetnt {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+    .transform-conetnt h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      line-height: 35px;
+    }
+    .transform-conetnt .default-btn {
+      display: table;
+      margin: auto;
+    }
+    .single-transform {
+      display: block !important;
+    }
+    .single-transform .transform-video-img {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .single-transform .transform-video-content {
+      margin-left: 0;
+      text-align: center;
+    }
+    .single-transform .transform-video-content h3 {
+      font-size: 18px;
+    }
+    .transform-img::before {
+      width: 100%;
+      height: 100%;
+    }
+
+  }
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* Transform Header */
+    .single-transform {
+      display: -webkit-box !important;
+      display: -ms-flexbox !important;
+      display: flex !important;
+    }
+    .single-transform .transform-video-img {
+      text-align: left;
+      margin-bottom: 0;
+    }
+    .single-transform .transform-video-content {
+      margin-left: 10px;
+      text-align: left;
+    }
+    .single-transform .transform-video-content h3 {
+      font-size: 18px;
+    }
+  }
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Transform Style */
+    .transform-conetnt {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+    .transform-conetnt h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      line-height: 35px;
+    }
+    .transform-conetnt .default-btn {
+      display: table;
+      margin: auto;
+    }
+    .single-transform .transform-video-content h3 {
+      font-size: 18px;
+    }
+    .transform-img::before {
+      right: 0;
+      margin: auto;
+    }
+
+  }
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /* Transform Area */
+    .transform-conetnt {
+      margin-right: 0;
+    }
+    .transform-conetnt h2 {
+      font-size: 35px;
+    }
+    .transform-img::before {
+      width: 450px;
+      height: 450px;
+      top: -50px;
+    }
+  }

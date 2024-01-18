@@ -60,7 +60,7 @@ function Banner() {
                             className="banner-content"
                         >
                             <span className="overflow-hidden inline-block my-4">
-                                <motion.span className="inline-block text-7xl font-bold text-white" variants={item}>
+                                <motion.span className="inline-block text-5xl md:text-6xl lg:text-7xl font-bold text-white" variants={item}>
                                     Improve Your Online Learning Experience Better Instantly
                                 </motion.span>
                             </span>
