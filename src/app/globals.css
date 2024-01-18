@@ -1107,3 +1107,11 @@ Footer Area Style
 .copy-right-area p a {
   color: #098b99;
 }
+
+/*
+Partner Area Style
+======================================================*/
+.partner-slide.owl-carousel .owl-item img {
+  margin: auto;
+  width: auto;
+}
