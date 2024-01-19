@@ -1,12 +1,12 @@
 "use client";
+import AllCourse from "@/app/components/admin/course/AllCourse";
 import Meta from "../../../utils/Meta";
-import AllCourses from "../../../components/admin/course/AllCourses";
 
 const page = () => {
   return (
     <div>
       <Meta title="Courses - EduSphere" />
-      <AllCourses />
+      <AllCourse />
     </div>
   );
 };
