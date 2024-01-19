@@ -7,6 +7,7 @@ import { AiOutlineDelete } from "react-icons/ai";
 import { BsPencil } from "react-icons/bs";
 import DataTable from '@/app/utils/DataTable';
 import CustomModal from '@/app/utils/CustomModal';
+import DeleteUser from '../users/Actions/DeleteUser';
 
 function AllCourse() {
     const { data, isLoading, error } = useGetAllCourseQuery(undefined);
