@@ -1,7 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useGetUserAllCourseQuery } from '@/app/redux/api/courses/coursesApi';
 
 function Courses() {
+  const { data, isLoading, isSuccess } = useGetUserAllCourseQuery(undefined);
+  console.log(data);
   const variants = {
     visible: {
       opacity: 1,

@@ -61,7 +61,6 @@ const SignUp = ({ setRoute }: Props) => {
         email,
         password,
       };
-
       await register(data);
     },
   });

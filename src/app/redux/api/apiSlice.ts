@@ -4,7 +4,7 @@ import { userLoggedIn } from "./auth/authSlice";
 export const api = createApi({
   reducerPath: "api",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://learnify-backend-three.vercel.app/api/v1",
+    baseUrl: "http://localhost:5000/api/v1",
     credentials: "include",
   }),
   tagTypes: [
