@@ -6,7 +6,7 @@ import { Box, Typography, IconButton } from "@mui/material";
 import { useState, useEffect } from "react";
 import { useAppSelector } from "../../redux/hook";
 import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
-import avatarDefault from "../../../public/assets/avatar.png";
+import avatarDefault from "../../../../public/assets/images/avatar.png";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";

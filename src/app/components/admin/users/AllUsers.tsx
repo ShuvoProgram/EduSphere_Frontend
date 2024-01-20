@@ -6,8 +6,9 @@ import { AiOutlineDelete } from "react-icons/ai";
 import { styles } from "../../../styles/style";
 import CustomModal from "../../../utils/CustomModal";
 import { useState } from "react";
-import MakeAdmin from "./Actons/MakeAdmin";
-import DeleteUser from "./Actons/DeleteUser";
+import MakeAdmin from "./Actions/MakeAdmin";
+import DeleteUser from "./Actions/DeleteUser";
+
 
 const AllUsers = ({ team = false }: { team?: boolean }) => {
   const { data, isLoading, error } = useGetAllUsersQuery(undefined);

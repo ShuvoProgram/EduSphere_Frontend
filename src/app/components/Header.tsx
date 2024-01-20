@@ -27,6 +27,7 @@ const Header = () => {
   const [openSidebar, setOpenSidebar] = useState(false);
 
   const { user }: { user: any } = useAppSelector((state) => state.auth);
+  
   const [socialAuth, { error, isSuccess }] = useSocialAuthMutation();
   const { data } = useSession();
 

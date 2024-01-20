@@ -1,5 +1,5 @@
 import Image from "next/image";
-import avatarDefault from "../../../public/assets/avatar.png";
+import avatarDefault from "../../../../public/assets/images/avatar.png";
 import { RiLockPasswordLine } from "react-icons/ri";
 import { SiCoursera } from "react-icons/si";
 import { AiOutlineLogout } from "react-icons/ai";
