@@ -1,5 +1,5 @@
 "use client";
-
+import FAQ from "@/app/components/faq/FAQ";
 import Meta from "../../utils/Meta";
 
 const page = () => {
