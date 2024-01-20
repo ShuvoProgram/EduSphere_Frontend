@@ -142,7 +142,7 @@ const AdminSidebar = () => {
               >
                 <Link href="/">
                   <h3 className="text-[25px] font-Poppins uppercase  text-black">
-                    Learnify
+                    EduSphere
                   </h3>
                 </Link>
                 <IconButton

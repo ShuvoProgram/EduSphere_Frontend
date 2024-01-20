@@ -24,15 +24,18 @@ const EditHero = () => {
   const { data } = useGetHeroDataQuery("banner", {
     refetchOnMountOrArgChange: true,
   });
+
+  console.log(data);
+
   const originalTitle = data?.data?.banner.title;
   const originalSubTitle = data?.data?.banner?.subTitle;
 
-  useEffect(() => {
-    if (data) {
-      setTitle(data.data.banner.title);
-      setSubTitle(data.data.banner.subTitle);
-    }
-  }, [data]);
+  // useEffect(() => {
+  //   if (data) {
+  //     setTitle(data.data.banner.title);
+  //     setSubTitle(data.data.banner.subTitle);
+  //   }
+  // }, [data]);
 
   const [editBanner, { isLoading, error, isSuccess }] = useEditBannerMutation();
 
@@ -55,7 +58,7 @@ const EditHero = () => {
 
   return (
     <>
-      <div className="flex flex-col gap-6 items-center justify-center min-h-[65vh] 800px:min-h-[87vh] relative mt-[70px]">
+      {/* <div className="flex flex-col gap-6 items-center justify-center min-h-[65vh] 800px:min-h-[87vh] relative mt-[70px]">
         <div
           className={`bg-shape bg-gradient-to-t ${
             theme === "dark"
@@ -105,7 +108,7 @@ const EditHero = () => {
             "Save"
           )}
         </button>
-      </div>
+      </div> */}
     </>
   );
 };
