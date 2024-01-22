@@ -5,6 +5,7 @@ import advance from '../../../../../public/assets/images/VerticalContainer.png';
 import { AiOutlineUnorderedList } from "react-icons/ai";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from 'framer-motion';
 
 type Props = {
     course: any;
@@ -13,6 +14,20 @@ type Props = {
 
 export const CourseCard2 = ({ course, isProfile }: Props) => {
     return (
+        <motion.div
+        className="p-4"
+                  initial="hidden"
+                  whileInView="visible"
+                  transition={{
+                    type: "spring",
+                    duration: 3,
+                    bounce: 0.3,
+                  }}
+                  variants={{
+                    visible: { opacity: 1, scale: 1 },
+                    hidden: { opacity: 0, scale: 0 },
+                  }}
+        >
         <div className="w-[300px] h-[396px] card">
             <div className="h-[396px] top-0 w-[300px] left-0">
                 <div className="relative w-[300px] h-[396px]">
@@ -98,5 +113,6 @@ export const CourseCard2 = ({ course, isProfile }: Props) => {
                 </div>
             </div>
         </div>
+        </motion.div>
     );
 };

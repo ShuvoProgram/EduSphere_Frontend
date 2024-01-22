@@ -1,7 +1,7 @@
 "use client";
 import { styles } from "../../../styles/style";
 import { CircularProgress } from "@mui/material";
-import avatar from "../../../../public/assets/avatar.png";
+import avatar from "../../../../../public/assets/images/avatar.png";
 import { format } from "date-fns";
 
 import CoursePlayer from "../../../utils/CoursePlayer";

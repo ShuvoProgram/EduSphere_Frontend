@@ -3,6 +3,7 @@ import Link from 'next/link';
 import {FaGraduationCap} from 'react-icons/fa'
 import { AiFillVideoCamera } from 'react-icons/ai';
 import { FaPeopleCarry } from 'react-icons/fa'
+import CountUp from 'react-countup';
 
 function Achievements() {
   return (
@@ -26,7 +27,8 @@ function Achievements() {
                             <FaGraduationCap size={30} style={{ color:'#208486' }}/>
                         </div>
                         <div className='px-3'>
-                            <h1 className='text-2xl font-semibold'>100 +</h1>
+                        <CountUp delay={2} duration={10} end={100} className='text-2xl font-semibold'/>
+                            {/* <h1 className='text-2xl font-semibold'>100 +</h1> */}
                             <p className='text-[#60737a]'>Instructors</p>
                         </div>
                     </li>
@@ -35,7 +37,8 @@ function Achievements() {
                             <AiFillVideoCamera size={30} style={{ color:'#208486' }}/>
                         </div>
                         <div className='px-3'>
-                            <h1 className='text-2xl font-semibold'>10,000 +</h1>
+                        <CountUp delay={2} duration={10} end={10000} className='text-2xl font-semibold'/>
+                            {/* <h1 className='text-2xl font-semibold'>10,000 +</h1> */}
                             <p className='text-[#60737a]'>Videos</p>
                         </div>
                     </li>
@@ -49,7 +52,8 @@ function Achievements() {
                             <FaPeopleCarry size={30} style={{ color:'#208486' }}/>
                         </div>
                         <div className='px-3'>
-                            <h1 className='text-2xl font-semibold'>3000 +</h1>
+                        <CountUp delay={2} duration={10} end={3000} className='text-2xl font-semibold'/>
+                            {/* <h1 className='text-2xl font-semibold'>3000 +</h1> */}
                             <p className='text-[#60737a]'>Users</p>
                         </div>
                     </li>
@@ -58,7 +62,8 @@ function Achievements() {
                             <FaGraduationCap size={30} style={{ color:'#208486' }}/>
                         </div>
                         <div className='px-3'>
-                            <h1 className='text-2xl font-semibold'>300 +</h1>
+                        <CountUp delay={2} duration={10} end={300} className='text-2xl font-semibold'/>
+                            {/* <h1 className='text-2xl font-semibold'>300 +</h1> */}
                             <p className='text-[#60737a]'>Students</p>
                         </div>
                     </li>

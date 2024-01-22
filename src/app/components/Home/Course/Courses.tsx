@@ -6,7 +6,6 @@ import CardSkeleton from '../../CardSkeleton/CardSkeleton';
 
 function Courses() {
   const { data, isLoading, isSuccess } = useGetUserAllCourseQuery(undefined);
-  console.log(data);
   const variants = {
     visible: {
       opacity: 1,

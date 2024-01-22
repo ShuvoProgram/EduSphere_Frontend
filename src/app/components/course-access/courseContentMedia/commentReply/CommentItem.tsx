@@ -1,7 +1,7 @@
 "use client";
 import { format } from "date-fns";
 import Image from "next/image";
-import avatar from "../../../../../public/assets/avatar.png";
+import avatar from "../../../../../../public/assets/images/avatar.png";
 import { useState } from "react";
 import { CircularProgress } from "@mui/material";
 import { VscVerifiedFilled } from "react-icons/vsc";

@@ -20,7 +20,7 @@ const Page = () => {
       />
       <Banner/>
       <Courses/>
-      <Categories/>
+      {/* <Categories/> */}
       <Transform/>
       <Features/>
       <Achievements />
