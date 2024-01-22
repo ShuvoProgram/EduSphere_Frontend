@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useGetUserAllCourseQuery } from '@/app/redux/api/courses/coursesApi';
 import { CourseCard2 } from './CourseCard2';
 import CardSkeleton from '../../CardSkeleton/CardSkeleton';
+import CourseCard from './CourseCard';
 
 function Courses() {
   const { data, isLoading, isSuccess } = useGetUserAllCourseQuery(undefined);
