@@ -16,8 +16,10 @@ import CheckoutForm from "./checkoutForm/CheckoutForm";
 import { useTheme } from "next-themes";
 import StarRating from "../../../utils/StarRating";
 import toast from "react-hot-toast";
+import PageBanner from "../../PageBanner";
 
 const CourseDetails = ({ data }: any) => {
+  console.log(data);
   const [open, setOpen] = useState(false);
   const [stripePromise, setStripePromise] = useState<any>(null);
   const [clientSecret, setClientSecret] = useState<any>("");
@@ -81,21 +83,27 @@ const CourseDetails = ({ data }: any) => {
 
   return (
     <div>
+      <PageBanner
+          pageTitle={data?.name}
+          homePageUrl="/"
+          homePageText="Home"
+          activePageText={data?.name}
+          />
       <div className="w-[90%] 800px:w-[90%] m-auto py-5 ">
         <div className="w-full flex flex-col-reverse 800px:flex-row">
           <div className="w-full 800px:w-[65%] 800px:pr-5">
-            <h1 className="text-[25px] 800px:text-[30px] font-Poppins font-[600] text-black dark:text-white">
+            <h1 className="text-[25px] 800px:text-[30px] font-Poppins font-[600]">
               {data?.name}
             </h1>
             <div className="flex justify-between items-center ">
               <StarRating ratings={data?.ratings} />
-              <p className="dark:text-white text-black font-[500]">
+              <p className="font-[500]">
                 ({data?.purchased} students)
               </p>
             </div>
             <br />
             <div>
-              <h1 className="text-[25px] font-Poppins font-[600] text-black dark:text-white">
+              <h1 className="text-[25px] font-Poppins font-[600]">
                 Course Overview
               </h1>
               <div>
@@ -106,7 +114,7 @@ const CourseDetails = ({ data }: any) => {
             </div>
 
             <div>
-              <h1 className="text-[25px] font-Poppins font-[600] text-black dark:text-white">
+              <h1 className="text-[25px] font-Poppins font-[600]">
                 What you will learn from this course?
               </h1>
               <div>
@@ -117,7 +125,7 @@ const CourseDetails = ({ data }: any) => {
             </div>
 
             <div>
-              <h1 className="text-[25px] font-Poppins font-[600] text-black dark:text-white">
+              <h1 className="text-[25px] font-Poppins font-[600]">
                 What are the prerequisites for starting this course?
               </h1>
               <div>
@@ -128,17 +136,17 @@ const CourseDetails = ({ data }: any) => {
             </div>
 
             <div>
-              <h1 className="text-[25px] font-Poppins font-[600] text-black dark:text-white">
+              <h1 className="text-[25px] font-Poppins font-[600]">
                 Course Desciption
               </h1>
-              <p className="text-[18px] mt-[20px] whitespace-pre-line w-full overflow-hidden text-black dark:text-white">
+              <p className="text-[18px] mt-[20px] whitespace-pre-line w-full overflow-hidden">
                 {data?.description}
               </p>
               <br />
               <br />
             </div>
             <div className=" ">
-              <h1 className="text-[25px] font-Poppins font-[600] text-black dark:text-white">
+              <h1 className="text-[25px] font-Poppins font-[600] ">
                 Course Reviews ({data?.reviews?.length})
               </h1>
               <div className="mt-[20px] grid grid-cols-1 gap-y-5">
@@ -159,11 +167,11 @@ const CourseDetails = ({ data }: any) => {
           <>
             {open && (
               <div className="w-full h-screen bg-[#00000036] fixed top-0 left-0 z-50 flex items-center justify-center backdrop-blur-md bg-black bg-opacity-40">
-                <div className="w-[500px] dark:bg-[#171C24]  bg-white rounded-xl shadow p-3 dark:text-white text-black">
+                <div className="w-[500px] dark:bg-[#171C24]  bg-white rounded-xl shadow p-3 ">
                   <div className="w-full flex justify-end">
                     <IoCloseOutline
                       size={40}
-                      className="text-black cursor-pointer dark:text-white "
+                      className=" cursor-pointer"
                       onClick={() => setOpen(false)}
                     />
                   </div>

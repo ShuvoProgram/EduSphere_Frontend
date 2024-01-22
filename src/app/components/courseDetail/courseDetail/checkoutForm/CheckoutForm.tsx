@@ -68,11 +68,11 @@ const CheckoutForm = ({ setOpen, data, user }: Props) => {
         options={{ defaultValues: { email: user?.email } }}
         id="link-authentication-element"
       />
-      <PaymentElement id="payment-element" className="mt-5 dark:text-black" />
+      <PaymentElement id="payment-element" className="mt-5 " />
       <button
         disabled={isLoading || !stripe || !elements || createOrderLoading}
         id="submit"
-        className={`${styles.button} my-5 !h-[35px] !w-[120px] bg-[#37a39a] text-white`}
+        className={`${styles.button} my-5 !h-[35px] !w-[120px] bg-[#37a39a] `}
       >
         <span id="button-text">{isLoading ? "Paying..." : "Pay now"}</span>
       </button>

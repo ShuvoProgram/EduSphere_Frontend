@@ -85,16 +85,16 @@ const CourseOverview = ({
             <AccordionSummary
               expandIcon={
                 expanded[sectionIndex] ? (
-                  <HiMinus className="dark:text-[#37a39a] text-black" />
+                  <HiMinus className="dark:text-[#37a39a] " />
                 ) : (
-                  <HiPlus className="dark:text-[#37a39a] text-black" />
+                  <HiPlus className="dark:text-[#37a39a]" />
                 )
               }
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
               <div>
-                <p className="font-Poppins dark:text-white text-black font-[500]">
+                <p className="font-Poppins font-[500]">
                   {sectionTitle}
                 </p>
                 <p className="text-sm font-[500] text-[#37a39a]">
@@ -107,7 +107,7 @@ const CourseOverview = ({
             </AccordionSummary>
             <AccordionDetails>
               {courseAccessPage ? (
-                <div className="flex flex-col gap-y-2 dark:text-white text-black ">
+                <div className="flex flex-col gap-y-2 ">
                   {sectionObjectsMap[sectionTitle].map(
                     (lecture: any, lectureIndex: number) => (
                       <button
@@ -124,7 +124,7 @@ const CourseOverview = ({
                   )}
                 </div>
               ) : (
-                <div className="flex flex-col gap-y-1 dark:text-white text-black">
+                <div className="flex flex-col gap-y-1 ">
                   {sectionObjectsMap[sectionTitle].map((lecture: any) => (
                     <div
                       key={lecture._id}

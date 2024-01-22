@@ -14,20 +14,20 @@ const CourseReviews = ({ reviews }: any) => {
           <div className="flex">
             <div className="w-[50px] h-[50px]">
               <div className="w-[50px] h-[50px] bg-slate-600 rounded-[50px] flex items-center justify-center cursor-pointer">
-                <h1 className="uppercase text-[18px] text-black dark:text-white">
+                <h1 className="uppercase text-[18px] ">
                   {review?.user?.name ? review.user.name.slice(0, 2) : ""}
                 </h1>
               </div>
             </div>
             <div className=" pl-2 ">
               <div className="flex flex-col">
-                <p className="text-black dark:text-white">
+                <p className="">
                   {review?.user?.name}
                 </p>
                 <StarRating ratings={review?.rating} length={reviews?.length} />
               </div>
-              <p className="text-black dark:text-white">{review?.comment}</p>
-              <small className="text-[#000000d1] dark:text-[#ffffff83]">
+              <p className="">{review?.comment}</p>
+              <small className="">
                 {format(new Date(review?.createdAt), "dd MMM yyyy")}
               </small>
             </div>

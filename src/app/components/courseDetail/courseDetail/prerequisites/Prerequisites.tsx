@@ -8,10 +8,10 @@ const Prerequisites = ({ prerequisites }: any) => {
           <div className="w-[15px] mr-1">
             <IoCheckmarkDoneOutline
               size={20}
-              className="text-black dark:text-white"
+              className=""
             />
           </div>
-          <p className="pl-2 text-black dark:text-white">{item?.title}</p>
+          <p className="pl-2 ">{item?.title}</p>
         </div>
       ))}
     </div>

@@ -1,10 +1,12 @@
 import Link from 'next/link';
 import React from 'react';
 import { FaPlay } from "react-icons/fa";
+import PageBanner from '../PageBanner';
 
 function About() {
   return (
     <div className="transform-area pt-16 pb-20">
+
       <div className="container ml-4 mr-6">
         <div className="flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2">

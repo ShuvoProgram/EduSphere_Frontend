@@ -19,7 +19,7 @@ const CourseAction = ({
     <div className="w-full 800px:w-[35%] relative mx-auto ">
       <div className="sticky top-[100px] left-0 z-50 w-full mx-auto ">
         <CoursePlayer title={data?.title} videoUrl={data?.demoUrl} />
-        <div className="flex items-center gap-10 pt-5 text-black dark:text-white">
+        <div className="flex items-center gap-10 pt-5 ">
           <h1 className=" text-[25px]">
             {data?.price === "Free" ? "Free" : data?.price + "$"}
           </h1>
@@ -37,21 +37,21 @@ const CourseAction = ({
         <div className="flex items-center">
           {isPurchased ? (
             <Link
-              className={`${styles.button} !w-[180px] my-3 font-Poppins cursor-pointer   text-white`}
+              className={`${styles.button} !w-[180px] my-3 font-Poppins cursor-pointer   `}
               href={`/course-access/${data?._id}`}
             >
               Enter Course
             </Link>
           ) : (
             <div
-              className={`${styles.button} !w-[180px] my-3 font-Poppins cursor-pointer bg-[crimson] text-white`}
+              className={`${styles.button} !w-[180px] my-3 font-Poppins cursor-pointer bg-[crimson]`}
               onClick={handleOrder}
             >
               Buy Now {data?.price}$
             </div>
           )}
         </div>
-        <div className="mt-3 dark:text-white text-black">
+        <div className="mt-3 dark:text-white ">
           <p className="pb-1">▪️ Source code included</p>
           <p className="pb-1">▪️ Full lifetime access</p>
           <p className="pb-1">▪️ Certificate of completion</p>
