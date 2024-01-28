@@ -65,8 +65,8 @@ const Login = ({ setRoute, setOpen }: Props) => {
 
   return (
     <div className="w-full">
-      <h1 className={`${styles.title} dark:text-white `}>
-        Login with Learnify
+      <h1 className={`${styles.title} `}>
+        Login with EduSphere
       </h1>
       <form onSubmit={handleSubmit}>
         <label className={`${styles.label} dark:text-white`} htmlFor="email">

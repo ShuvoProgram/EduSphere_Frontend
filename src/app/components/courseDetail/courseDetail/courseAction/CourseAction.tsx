@@ -15,6 +15,7 @@ const CourseAction = ({
   isPurchased,
   handleOrder,
 }: Props) => {
+  
   return (
     <div className="w-full 800px:w-[35%] relative mx-auto ">
       <div className="sticky top-[100px] left-0 z-50 w-full mx-auto ">

@@ -69,7 +69,7 @@ const SignUp = ({ setRoute }: Props) => {
 
   return (
     <div className="w-full">
-      <h1 className={`${styles.title} dark:text-white`}>Join to Learnify</h1>
+      <h1 className={`${styles.title}`}>Join to EduSphere</h1>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <label className={`${styles.label} dark:text-white`} htmlFor="email">

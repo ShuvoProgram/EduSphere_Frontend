@@ -20,7 +20,7 @@ const CoursePlayer: FC<Props> = ({ videoUrl, hasAccess }) => {
   const fetchData = useCallback(() => {
     axios
       .post(
-        `https://learnify-backend-three.vercel.app/api/v1/courses/get-vdocipherOTP`,
+        `https://edu-sphere-backend.vercel.app/api/v1/courses/get-vdocipherOTP`,
         {
           videoId: videoUrl,
           email: hasAccess ? user?.email : "",
@@ -41,13 +41,15 @@ const CoursePlayer: FC<Props> = ({ videoUrl, hasAccess }) => {
     // }
   }, [fetchData, api, videoUrl]);
 
+  // console.log(videoData)
+
   return (
     <div
       style={{ paddingTop: "56.25%", position: "relative", overflow: "hidden" }}
     >
       {videoData.otp && videoData.playbackInfo && (
         <iframe
-          src={`https://player.vdocipher.com/v2/?otp=${videoData.otp}&playbackInfo=${videoData.playbackInfo}&player=N7Hx3Od3DLpqvwfm`}
+          src={`https://player.vdocipher.com/v2/?otp=${videoData.otp}&playbackInfo=${videoData.playbackInfo}&player=6fb1aEnUw6jljnRl`}
           style={{
             border: 0,
             width: "100%",

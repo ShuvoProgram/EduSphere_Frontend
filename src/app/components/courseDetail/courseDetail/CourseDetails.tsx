@@ -19,7 +19,6 @@ import toast from "react-hot-toast";
 import PageBanner from "../../PageBanner";
 
 const CourseDetails = ({ data }: any) => {
-  console.log(data);
   const [open, setOpen] = useState(false);
   const [stripePromise, setStripePromise] = useState<any>(null);
   const [clientSecret, setClientSecret] = useState<any>("");
@@ -89,7 +88,7 @@ const CourseDetails = ({ data }: any) => {
           homePageText="Home"
           activePageText={data?.name}
           />
-      <div className="w-[90%] 800px:w-[90%] m-auto py-5 ">
+      <div className="w-[90%] 800px:w-[90%] m-auto pt-5 pb-20">
         <div className="w-full flex flex-col-reverse 800px:flex-row">
           <div className="w-full 800px:w-[65%] 800px:pr-5">
             <h1 className="text-[25px] 800px:text-[30px] font-Poppins font-[600]">
