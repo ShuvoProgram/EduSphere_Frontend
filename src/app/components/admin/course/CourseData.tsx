@@ -1,17 +1,18 @@
+import React from "react";
 import toast from "react-hot-toast";
 import { styles } from "../../../styles/style";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 
 type Props = {
   benefits: { title: string }[];
-  setBenefits: (benefits: { title: string }[]) => void;
+  setBenefits: React.Dispatch<React.SetStateAction<{ title: string }[]>>;
   prerequisites: { title: string }[];
-  setPrerequisites: (prerequisites: { title: string }[]) => void;
+  setPrerequisites: React.Dispatch<React.SetStateAction<{ title: string }[]>>;
   active: number;
-  setActive: (active: number) => void;
+  setActive: React.Dispatch<React.SetStateAction<number>>;
 };
 
-const CourseData = ({
+const CourseData: React.FC<Props> = ({
   benefits,
   setBenefits,
   prerequisites,
@@ -19,27 +20,36 @@ const CourseData = ({
   active,
   setActive,
 }: Props) => {
-  const handleBenefitChange = (index: number, value: any) => {
-    const updatedBenefits = [...benefits];
-    updatedBenefits[index].title = value;
-    setBenefits(updatedBenefits);
+  const handleBenefitChange = (index: number, value: string) => {
+    setBenefits((prevBenefits) => {
+      const updatedBenefits = [...prevBenefits];
+      updatedBenefits[index] = { title: value };
+      return updatedBenefits;
+    });
   };
+
   const handleAddBenefit = () => {
-    setBenefits([...benefits, { title: "" }]);
+    setBenefits((prevBenefits) => [...prevBenefits, { title: "" }]);
   };
-  const handlePrerequisitesChange = (index: number, value: any) => {
-    const updatedPrerequisites = [...prerequisites];
-    updatedPrerequisites[index].title = value;
-    setPrerequisites(updatedPrerequisites);
+
+  const handlePrerequisitesChange = (index: number, value: string) => {
+    setPrerequisites((prevPrerequisites) => {
+      const updatedPrerequisites = [...prevPrerequisites];
+      updatedPrerequisites[index] = { title: value };
+      return updatedPrerequisites;
+    });
   };
 
   const handleAddPrerequisites = () => {
-    setPrerequisites([...prerequisites, { title: "" }]);
+    setPrerequisites((prevPrerequisites) => [
+      ...prevPrerequisites,
+      { title: "" },
+    ]);
   };
 
   const prevButton = () => {
     if (active > 0) {
-      setActive(active - 1);
+      setActive((prevActive) => prevActive - 1);
     }
   };
 
@@ -52,12 +62,12 @@ const CourseData = ({
     ) {
       toast.error("Please fill the fields before going to the next step.");
     } else {
-      setActive(active + 1);
+      setActive((prevActive) => prevActive + 1);
     }
   };
 
   return (
-    <div className=" w-[80%] m-auto mt-24 block">
+    <div className="w-[80%] m-auto mt-24 block">
       <div>
         <label className={`${styles.label} text-[20px]`} htmlFor="Benefit">
           What are the benefits for students in this course?

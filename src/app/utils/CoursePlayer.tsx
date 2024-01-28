@@ -20,7 +20,7 @@ const CoursePlayer: FC<Props> = ({ videoUrl, hasAccess }) => {
   const fetchData = useCallback(() => {
     axios
       .post(
-        `https://edu-sphere-backend.vercel.app/api/v1/courses/get-vdocipherOTP`,
+        `${process.env.NEXT_PUBLIC_API_URLL}/courses/get-vdocipherOTP`,
         {
           videoId: videoUrl,
           email: hasAccess ? user?.email : "",
