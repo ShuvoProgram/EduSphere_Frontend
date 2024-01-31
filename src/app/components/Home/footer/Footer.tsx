@@ -10,7 +10,7 @@ function Footer() {
             <div className="footer-area bg-[#F6FAFB] pt-16 pb-16 md:pt-24 md:pb-16">
                 <div className="container">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-                        <div className="col-span-1 md:col-span-1 ml-4">
+                        <div className="col-span-1 md:col-span-1 md:ml-4 mx-4">
                             <div className="flex items-center mb-8">
                                 <Link href="#" className="logo">
                                     <img

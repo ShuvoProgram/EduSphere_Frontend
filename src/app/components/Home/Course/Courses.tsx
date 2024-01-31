@@ -17,8 +17,10 @@ function Courses() {
   };
 
   return (
-    <div className="courses-area pt-20 md:pt-32 lg:pt-40 pb-16 md:pb-24 lg:pb-32 w-[98%] 800px:w-[98%] m-auto">
+    <div className="courses-area pt-20 md:pt-32 lg:pt-40 pb-16 md:pb-24 lg:pb-32 w-[98%] 800px:w-[98%] ">
+      {/* m-auto */}
       <div className="container mx-auto">
+      
         <motion.div
           className="section-title text-center mb-12 md:mb-16 lg:mb-20"
           initial="hidden"
@@ -33,7 +35,7 @@ function Courses() {
           With Our Courses
           </h2>
         </motion.div>
-        <div className="grid grid-cols-1 gap-[20px] md:grid-cols-3 md:gap-[25px] lg:grid-cols-4 1500px:grid-cols-4 1500px:gap-[35px] mb-12 border-0">
+        <div className="grid grid-cols-1 gap-[20px] md:grid-cols-3 md:gap-[15px] lg:grid-cols-4 1500px:grid-cols-4 1500px:gap-[35px] mb-12 border-0 mx-auto">
          {/* Check if data is loading */}
          {isLoading ? (
             // Display skeleton cards while loading

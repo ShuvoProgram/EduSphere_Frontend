@@ -10,7 +10,7 @@ function Achievements() {
     <div className="teaching-area pt-36 pb-20">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row items-center">
-          <div className="lg:w-1/2 ml-4">
+          <div className="lg:w-1/2 ml-8">
             <div className="teaching-content mr-4 lg:mr-15">
               <h2 className="text-3xl lg:text-4xl font-bold mb-6">
               Achievements
@@ -70,7 +70,6 @@ function Achievements() {
                   </ul>
                 </div>
               </div>
-
             </div>
           </div>
 

@@ -23,7 +23,7 @@ function Testimonial() {
 
           <div className="lg:w-6/12">
             <div className="testimonials-conetent">
-              <h2 className="text-2xl lg:text-4xl font-bold mb-6">
+              <h2 className="text-xl lg:text-4xl font-bold mb-6">
                 Our Students Are Our Strength. See What They Say About Us
               </h2>
 

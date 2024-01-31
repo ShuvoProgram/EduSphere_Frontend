@@ -17,11 +17,11 @@ function Transform() {
               </p>
 
               <div className="single-transform flex items-center mt-4">
-                <div className="transform-video-img !flex-shrink-0">
+                <div className="transform-video-img flex justify-center !flex-shrink-0">
                   <img
                     src="/assets/images/courses/course-16.jpg"
                     alt="about"
-                    className="w-24 md:w-32 h-24 md:h-32 object-cover rounded-lg"
+                    className="w-32 md:w-32 h-24 md:h-32 object-cover rounded-lg"
                   />
                   <Link href="/learning/my-courses">
                     <span className="video-btns popup-youtube cursor-pointer">
@@ -33,7 +33,7 @@ function Transform() {
                 <div className="transform-video-content flex-grow-1 ml-4">
                   <h3>
                     <Link href="/learning/my-courses">
-                      <span className="popup-youtube cursor-pointer">
+                      <span className="popup-youtube cursor-pointer font-semibold">
                         Watch Video From the Community How Edmy Change Their Life
                       </span>
                     </Link>
@@ -43,15 +43,13 @@ function Transform() {
                   </ul>
                 </div>
               </div>
-
-              <Link href="/courses">
+              <Link href="/courses" className='flex items-center justify-center md:justify-start'>
                 <span className="inline-block mt-4 px-6 py-3 bg-[#208486] text-white rounded-md transition duration-300 ease-in-out hover:bg-[#449c9d] cursor-pointer">
                   Find Out How
                 </span>
               </Link>
             </div>
           </div>
-
           <div className="md:w-1/2 wow animate__animated animate__fadeInRight delay-200 mt-8 md:mt-0">
             <div className="transform-img wow animate__animated animate__fadeInRight delay-800">
               <img

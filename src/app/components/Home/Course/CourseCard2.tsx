@@ -16,7 +16,7 @@ export const CourseCard2 = ({ course, isProfile }: Props) => {
     console.log(course)
     return (
         <motion.div
-        className="p-4"
+        className="p-4 w-[315px] md:w-[300px]"
                   initial="hidden"
                   whileInView="visible"
                   transition={{
@@ -29,7 +29,7 @@ export const CourseCard2 = ({ course, isProfile }: Props) => {
                     hidden: { opacity: 0, scale: 0 },
                   }}
         >
-        <div className="w-[300px] h-[340px] card">
+        <div className="w-[315px] md:w-[300px] h-[340px] card">
             <div className="h-[340px] top-0 w-[300px] left-0">
                 <div className="relative w-[300px] h-[396px]">
                     <div className="absolute h-[340px] top-[15px] bg-white rounded-[8px] shadow-[0px_20px_40px_#b7bcc840] w-[300px] left-0" />

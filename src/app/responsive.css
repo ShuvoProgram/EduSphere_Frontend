@@ -1,5 +1,28 @@
 /* Max width 767px */
 @media only screen and (max-width: 767px) {
+      /*
+Banner Area Style
+======================================================*/
+.banner-area {
+  position: relative;
+  z-index: 1;
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+.teaching-img::before {
+  content: "";
+  position: absolute;
+  top: 150px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 350px;
+  height: 350px;
+  background: linear-gradient(134.98deg, rgba(155, 212, 167, 0.4) 14.29%, rgba(48, 158, 169, 0.1) 100%);
+  border-radius: 50%;
+  z-index: -1;
+  margin: auto;
+}
     /* Transform Style */
     .transform-conetnt {
       margin-right: 0;
@@ -40,6 +63,7 @@
 
 /* Min width 576px to Max width 767px */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+
     /* Transform Header */
     .single-transform {
       display: -webkit-box !important;
