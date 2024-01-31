@@ -166,7 +166,7 @@ const CourseContentMedia = ({
           <h5
             key={index}
             className={`800px: text-[20px] cursor-pointer  ${
-              activeBar === index ? "text-[#37a39a]" : "dark:text-white"
+              activeBar === index ? "text-[#37a39a]" : ""
             }`}
             onClick={() => setActiveBar(index)}
           >
@@ -176,7 +176,7 @@ const CourseContentMedia = ({
       </div>
       <br />
       {activeBar === 0 && (
-        <p className="text=[18px] whitespace-pre-line mb-3 dark:text-white text-black">
+        <p className="text=[18px] whitespace-pre-line mb-3  text-black">
           {data[activeVideo]?.description}
         </p>
       )}
@@ -184,7 +184,7 @@ const CourseContentMedia = ({
         <>
           {data[activeVideo].links.map((item: any) => (
             <div className="mb-5" key={item?._id}>
-              <h2 className="800px: text-[20px] 800px:inline-block dark:text-white text-black">
+              <h2 className="800px: text-[20px] 800px:inline-block  text-black">
                 {item.title && item.title + ":"}
               </h2>
               <a
@@ -216,7 +216,7 @@ const CourseContentMedia = ({
               cols={40}
               rows={5}
               placeholder="Write your question..."
-              className="outline-none bg-transparent ml-3 border border-[#00000027] dark:border-slate-500 800px:w-full p-2 rounded w-[90%] 800px:text-[18px] font-Poppins dark:text-white text-black"
+              className="outline-none bg-transparent ml-3 border border-[#00000027]  800px:w-full p-2 rounded w-[90%] 800px:text-[18px] font-Poppins  text-black"
             ></textarea>
           </div>
           <div className="w-full flex justify-end">
@@ -271,7 +271,7 @@ const CourseContentMedia = ({
               className="w-[40px] h-[40px] rounded-full object-cover"
             />
             <div className="w-full">
-              <h5 className="pl-3 text-[20px] font-[500] dark:text-white text-black">
+              <h5 className="pl-3 text-[20px] font-[500]  text-black">
                 Give a Rating <span className="text-red-500">*</span>
               </h5>
               <div className="flex w-full ml-2 pb-3">
@@ -325,7 +325,7 @@ const CourseContentMedia = ({
               <div className="w-full my-6">
                 {reviews.map((review: any) => (
                   <div
-                    className="flex mb-2 text-black dark:text-white"
+                    className="flex mb-2 text-black "
                     key={review._id}
                   >
                     <div className="w-[40px] h-[40px] bg-slate-600 rounded-[50px] flex items-center justify-center cursor-pointer">
@@ -344,7 +344,7 @@ const CourseContentMedia = ({
                         length={review.length}
                       />
                       <p className="text-[16px]">{review?.comment}</p>
-                      <small className="text-[#003A55]  dark:text-[#A3b3BC]">
+                      <small className="text-[#003A55]">
                         {format(new Date(review?.createdAt), "dd MMM yyyy")} •
                       </small>
                     </div>

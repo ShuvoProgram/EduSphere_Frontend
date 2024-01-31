@@ -8,7 +8,7 @@ const CourseReviews = ({ reviews }: any) => {
     <div>
       {reversedReviews?.map((review: any, index: number) => (
         <div
-          className=" p-4  w-full h-max dark:bg-slate-500 dark:bg-opacity-20 border border-[#00000028] dark:border-[#ffffff1d] backdrop-blur shadow-[bg-slate-700] rounded-lg shadow-inner mt-1"
+          className=" p-4  w-full h-max  border border-[#00000028] backdrop-blur shadow-[bg-slate-700] rounded-lg shadow-inner mt-1"
           key={index}
         >
           <div className="flex">

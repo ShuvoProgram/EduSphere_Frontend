@@ -45,7 +45,7 @@ const Profile = ({ user }: { user: any }) => {
   return (
     <div className="w-[85%] flex mx-auto">
       <div
-        className={`w-[60px] 800px:w-[310px] h-[450px] bg-white dark:bg-slate-900 bg-opacity-90 border dark:border-[#ffffff1d] border-[#00000014] rounded-[5px]  shadow-sm mt-[80px] mb-[80px] sticky ${
+        className={`w-[60px] 800px:w-[310px] h-[450px] bg-white  bg-opacity-90 border border-[#00000014] rounded-[5px]  shadow-sm mt-[80px] mb-[80px] sticky ${
           scroll ? "top-[120px]" : "top-[30px]"
         } left-[30px]`}
       >

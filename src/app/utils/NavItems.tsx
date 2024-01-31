@@ -36,7 +36,7 @@ const NavItems = ({ activeItem, isMobile, setActiveItem }: Props) => {
               className={` ${
                 pathname === nav.url
                   ? "text-[#37a39a]"
-                  : "text-black dark:text-white"
+                  : "text-black"
               } text-[16px] px-6 font-Poppins font-[500]`}
             >
               {nav.name}
@@ -63,7 +63,7 @@ const NavItems = ({ activeItem, isMobile, setActiveItem }: Props) => {
                 className={`${
                   pathname === nav.url
                     ? "text-[#37a39a]"
-                    : "text-black dark:text-white"
+                    : "text-black "
                 } text-[18px] py-5 px-6 block font-Poppins font-[500]`}
               >
                 {nav.name}

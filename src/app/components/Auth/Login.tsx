@@ -69,7 +69,7 @@ const Login = ({ setRoute, setOpen }: Props) => {
         Login with EduSphere
       </h1>
       <form onSubmit={handleSubmit}>
-        <label className={`${styles.label} dark:text-white`} htmlFor="email">
+        <label className={`${styles.label} `} htmlFor="email">
           Enter your Email
         </label>
         <input
@@ -79,7 +79,7 @@ const Login = ({ setRoute, setOpen }: Props) => {
           onChange={handleChange}
           id="email"
           placeholder="loginmail@gmail.com"
-          className={`dark:text-white ${
+          className={` ${
             errors.email && touched.email ? "border-red-500" : ""
           } ${styles.input}`}
         />
@@ -89,7 +89,7 @@ const Login = ({ setRoute, setOpen }: Props) => {
 
         <div className="w-full mt-5 relative mb-1">
           <label
-            className={`${styles.label} dark:text-white`}
+            className={`${styles.label} `}
             htmlFor="password"
           >
             Enter your password
@@ -101,19 +101,19 @@ const Login = ({ setRoute, setOpen }: Props) => {
             onChange={handleChange}
             id="password"
             placeholder="password!@%"
-            className={`dark:text-white ${
+            className={` ${
               errors.password && touched.password ? "border-red-500" : ""
             } ${styles.input}`}
           />
           {!show ? (
             <AiOutlineEyeInvisible
-              className="absolute bottom-3 right-2 z-1 cursor-pointer dark:text-white"
+              className="absolute bottom-3 right-2 z-1 cursor-pointer "
               size={20}
               onClick={() => setShow(true)}
             />
           ) : (
             <AiOutlineEye
-              className="absolute bottom-3 right-2 z-1 cursor-pointer dark:text-white"
+              className="absolute bottom-3 right-2 z-1 cursor-pointer "
               size={20}
               onClick={() => setShow(false)}
             />
@@ -143,7 +143,7 @@ const Login = ({ setRoute, setOpen }: Props) => {
         </div>
 
         <br />
-        <h5 className="text-center pt-4 font-Poppins text-[14px] text-black dark:text-white">
+        <h5 className="text-center pt-4 font-Poppins text-[14px] text-black ">
           Or join with
         </h5>
         <div className="flex items-center justify-center my-3">
@@ -159,10 +159,10 @@ const Login = ({ setRoute, setOpen }: Props) => {
                 callbackUrl: "https://learnify-v1.vercel.app",
               })
             }
-            className="cursor-pointer ml-2 dark:text-white"
+            className="cursor-pointer ml-2 "
           />
         </div>
-        <h5 className="text-center pt-4 font-Poppins text-[14px] dark:text-white">
+        <h5 className="text-center pt-4 font-Poppins text-[14px] ">
           Not have any account?{" "}
           <span
             className="text-[#2190ff] pl-1 cursor-pointer"

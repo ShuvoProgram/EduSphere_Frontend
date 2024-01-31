@@ -31,7 +31,7 @@ const OrdersAnalytics = ({ isDashboard }: any) => {
           <h1
             className={`${styles.title} ${
               isDashboard && "!text-[20px]"
-            } px-5 text-start dark:text-white text-black`}
+            } px-5 text-start  text-black`}
           >
             Orders Analytics
           </h1>

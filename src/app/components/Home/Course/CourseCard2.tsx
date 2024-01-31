@@ -42,11 +42,11 @@ export const CourseCard2 = ({ course, isProfile }: Props) => {
                                     <div className="flex items-center">
                                         <h3
                                             className={`text-black font-medium ${course?.price > 0 ? "" : ""
-                                                } dark:text-[#fff]`}
+                                                } `}
                                         >
                                             {course?.price > 0 ? `${course?.price}$` : "Free"}
                                         </h3>
-                                        <h5 className="pl-3 text-[14px]  line-through opacity-80 text-black dark:text-[#fff]">
+                                        <h5 className="pl-3 text-[14px]  line-through opacity-80 text-black">
                                             {course?.estimatedPrice}$
                                         </h5>
                                     </div>
@@ -56,9 +56,9 @@ export const CourseCard2 = ({ course, isProfile }: Props) => {
                         <div className="flex items-center absolute w-[115px] h-[24px] top-0 left-[150px]">
                             <AiOutlineUnorderedList
                                 size={20}
-                                className="dark:text-white text-black"
+                                className=" text-black"
                             />
-                            <h5 className="pl-2 text-black dark:text-[#fff]">
+                            <h5 className="pl-2 text-black ">
                                 {course?.courseData?.length} Lectures
                             </h5>
                         </div>

@@ -36,7 +36,7 @@ const CourseOptions = ({ active, setActive }: Props) => {
           <h5
             className={`pl-3 ${
               active + 1 > index
-                ? " dark:text-white text-black"
+                ? "  text-black"
                 : "text-gray-400"
             }  text-[20px]`}
           >

@@ -19,7 +19,7 @@ const CommentItem = ({
 
   return (
     <div className="my-4">
-      <div className="flex mb-2 dark:text-white text-black">
+      <div className="flex mb-2 text-black">
         <div className="w-[40px] h-[40px] bg-slate-600 rounded-[50px] flex items-center justify-center cursor-pointer">
           <Image
             src={item?.user ? item?.user?.avatar?.url : avatar}
@@ -32,14 +32,14 @@ const CommentItem = ({
         <div className="pl-3">
           <h5 className="text-[18px]">{item?.user?.name}</h5>
           <p className="text-[16px]">{item?.question}</p>
-          <small className="text-[#003A55]  dark:text-[#A3b3BC]">
+          <small className="text-[#003A55]  ">
             {format(new Date(item.createdAt), "dd MMM yyyy")} •
           </small>
         </div>
       </div>
       <div className="w-full flex items-center">
         <span
-          className="800px: pl-16 text-black dark:text-[#ffffff83] cursor-pointer mr-2"
+          className="800px: pl-16 text-black cursor-pointer mr-2"
           onClick={() => {
             setReplyActive(!replyActive);
             setQuestionId(item._id);
@@ -52,7 +52,7 @@ const CommentItem = ({
             : "Hide Replies"}
         </span>
 
-        <span className="pl-1  cursor-pointer text-[#000000b8] dark:text-[#ffffff83]">
+        <span className="pl-1  cursor-pointer text-[#000000b8] ">
           ({item?.questionReplies?.length ? item?.questionReplies?.length : 0}{" "}
           replies)
         </span>
@@ -63,7 +63,7 @@ const CommentItem = ({
           {item?.questionReplies?.map((reply: any) => (
             <>
               <div
-                className="w-full flex 800px: ml-16 my-5 text-black dark:text-white"
+                className="w-full flex 800px: ml-16 my-5 text-black "
                 key={reply._id}
               >
                 <div>
@@ -99,7 +99,7 @@ const CommentItem = ({
                 onChange={(e) =>
                   setAnswer({ ...answer, [item?._id]: e.target.value })
                 }
-                className="block 800px:ml-12 mt-2 outline-none bg-transparent border-b border-[#00000027] dark:border-slate-500 p-[5px] w-[95%] dark:text-white text-black pr-16"
+                className="block 800px:ml-12 mt-2 outline-none bg-transparent border-b border-[#00000027]  p-[5px] w-[95%] text-black pr-16"
               />
               <button
                 type="submit"

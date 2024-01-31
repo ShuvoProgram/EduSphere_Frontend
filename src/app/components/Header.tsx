@@ -70,8 +70,8 @@ const Header = () => {
       <div
         className={`${
           active
-            ? "backdrop-blur-xl bg-white/70 dark:bg-opacity-50 dark:bg-gradient-to-b dark:from-gray-900 dark:to-black fixed top-0 left-0 w-full  h-[80px] z-[80] border-b dark:border-[#ffffff1c]"
-            : " w-full border-b dark:border-[#ffffff1c] z-[999999] dark:shadow"
+            ? "backdrop-blur-xl bg-white/70   fixed top-0 left-0 w-full  h-[80px] z-[80] border-b "
+            : " w-full border-b  z-[999999]"
         } `}
       >
         <div className="w-[95%] 800px:w-[92%] m-auto py-2 h-full">
@@ -113,7 +113,7 @@ const Header = () => {
               ) : (
                 <HiOutlineUserCircle
                   size={25}
-                  className={`hidden 800px:block cursor-pointer dark:text-white text-black `}
+                  className={`hidden 800px:block cursor-pointer  text-black `}
                   onClick={() => setOpen(true)}
                 />
               )}
@@ -121,7 +121,7 @@ const Header = () => {
               <div className="800px:hidden">
                 <HiOutlineMenuAlt3
                   size={25}
-                  className="cursor-pointer dark:text-white text-black"
+                  className="cursor-pointer  text-black"
                   onClick={() => setOpenSidebar(true)}
                 />
               </div>
@@ -131,11 +131,11 @@ const Header = () => {
 
         {openSidebar && (
           <div
-            className="fixed w-full h-screen top-0 left-0 z-[9999] dark:bg-[unset] bg-[#00000024] 800px:hidden"
+            className="fixed w-full h-screen top-0 left-0 z-[9999]  bg-[#00000024] 800px:hidden"
             id="screen"
             onClick={handleClose}
           >
-            <div className="w-[70%] fixed z-[999] h-screen backdrop-blur-xl bg-white/90 dark:bg-slate-900 dark:bg-opacity-90 top-0 right-0">
+            <div className="w-[70%] fixed z-[999] h-screen backdrop-blur-xl bg-white/90 top-0 right-0">
               <NavItems
                 activeItem={activeItem}
                 isMobile={true}
@@ -160,7 +160,7 @@ const Header = () => {
                 >
                   <HiOutlineUserCircle
                     size={25}
-                    className="cursor-pointer  text-black dark:text-white"
+                    className="cursor-pointer  text-black "
                   />
                 </button>
               )}
@@ -168,7 +168,7 @@ const Header = () => {
               <br />
               <br />
 
-              <p className="text-[16px] px-2 pl-5 text-black dark:text-white">
+              <p className="text-[16px] px-2 pl-5 text-black ">
                 Copyright {new Date().getFullYear()} EduSphere
               </p>
             </div>

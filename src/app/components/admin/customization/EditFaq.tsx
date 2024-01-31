@@ -90,16 +90,16 @@ const EditFaq = () => {
             <div
               className={`${
                 q._id !== questions[0]?._id ? "border-t" : ""
-              } border-gray-200 pt-6 dark:text-white text-black`}
+              } border-gray-200 pt-6  text-black`}
               key={index}
             >
               <dt className="text-lg">
                 <button
-                  className="flex items-start dark:text-white text-black justify-between w-full text-left focus:outline-none"
+                  className="flex items-start  text-black justify-between w-full text-left focus:outline-none"
                   onClick={() => toggleQuestion(q._id)}
                 >
                   <input
-                    className={`${styles.input} border-none dark:text-white text-black`}
+                    className={`${styles.input} border-none  text-black`}
                     value={q.question}
                     onChange={(e: any) =>
                       handleQuestionChange(q._id, e.target.value)
@@ -108,9 +108,9 @@ const EditFaq = () => {
                   />
                   <span className="ml-6 flex-shrink-0">
                     {q.active ? (
-                      <HiMinus className="h-6 w-6 dark:text-[#37a39a] text-black" />
+                      <HiMinus className="h-6 w-6  text-black" />
                     ) : (
-                      <HiPlus className="h-6 w-6 dark:text-[#37a39a] text-black" />
+                      <HiPlus className="h-6 w-6  text-black" />
                     )}
                   </span>
                 </button>
@@ -118,7 +118,7 @@ const EditFaq = () => {
               {q.active && (
                 <dd className="mt-2 pr-12">
                   <input
-                    className={`${styles.input} border-none dark:text-white text-black`}
+                    className={`${styles.input} border-none  text-black`}
                     value={q.answer}
                     onChange={(e: any) =>
                       handleAnswerChange(q._id, e.target.value)
@@ -127,7 +127,7 @@ const EditFaq = () => {
                   />
                   <span className="ml-6 flex-shrink-0">
                     <AiOutlineDelete
-                      className="dark:text-white text-black text-[18px] cursor-pointer"
+                      className=" text-black text-[18px] cursor-pointer"
                       onClick={() => {
                         setQuestions((prevQuestions) =>
                           prevQuestions.filter(
@@ -145,7 +145,7 @@ const EditFaq = () => {
         <br />
         <br />
         <IoMdAddCircleOutline
-          className="dark:text-white text-black text-[25px] cursor-pointer"
+          className=" text-black text-[25px] cursor-pointer"
           onClick={newFaqHandler}
         />
       </div>

@@ -52,7 +52,7 @@ const CourseAction = ({
             </div>
           )}
         </div>
-        <div className="mt-3 dark:text-white ">
+        <div className="mt-3">
           <p className="pb-1">▪️ Source code included</p>
           <p className="pb-1">▪️ Full lifetime access</p>
           <p className="pb-1">▪️ Certificate of completion</p>

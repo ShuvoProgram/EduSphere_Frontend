@@ -52,7 +52,7 @@ const DeleteUser = ({ setOpen, id, deletingCourse }: Props) => {
 
   return (
     <div className="w-full">
-      <h1 className={`${styles.title} !text-left dark:text-white text-black`}>
+      <h1 className={`${styles.title} !text-left text-black`}>
         {deletingCourse
           ? "Are you sure delete this course?"
           : " Are you sure delete this user?"}
@@ -60,7 +60,7 @@ const DeleteUser = ({ setOpen, id, deletingCourse }: Props) => {
       <div className="mt-5 flex gap-5 justify-end">
         <button
           onClick={() => setOpen(false)}
-          className={`${styles.button} !mb-0 z-[1000] !bg-transparent  !rounded-sm dark:text-white text-black !py-1`}
+          className={`${styles.button} !mb-0 z-[1000] !bg-transparent  !rounded-sm  text-black !py-1`}
         >
           Cancel
         </button>

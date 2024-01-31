@@ -27,7 +27,7 @@ function AllCourse() {
       renderCell: (params: any) => {
         return (
           <Link href={`/admin/edit-course/${params.row.id}`}>
-            <BsPencil className="dark:text-white text-black" size={20} />
+            <BsPencil className=" text-black" size={20} />
           </Link>
         );
       },
@@ -45,7 +45,7 @@ function AllCourse() {
             }}
           >
             <AiOutlineDelete
-              className="■dark:text-white text-black"
+              className="■ text-black"
               size={20}
             />
           </Button>

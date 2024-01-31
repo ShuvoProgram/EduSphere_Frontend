@@ -72,7 +72,7 @@ const SignUp = ({ setRoute }: Props) => {
       <h1 className={`${styles.title}`}>Join to EduSphere</h1>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
-          <label className={`${styles.label} dark:text-white`} htmlFor="email">
+          <label className={`${styles.label}`} htmlFor="email">
             Enter your Name
           </label>
           <input
@@ -84,13 +84,13 @@ const SignUp = ({ setRoute }: Props) => {
             placeholder="john doe"
             className={`${
               errors.name && touched.name ? "border-red-500" : ""
-            } ${styles.input} dark:text-white`}
+            } ${styles.input} `}
           />
           {errors.name && touched.name && (
             <span className="text-red-500 pt-2 block">{errors.name}</span>
           )}
         </div>
-        <label className={`${styles.label} dark:text-white`} htmlFor="email">
+        <label className={`${styles.label} `} htmlFor="email">
           Enter your Email
         </label>
         <input
@@ -102,7 +102,7 @@ const SignUp = ({ setRoute }: Props) => {
           placeholder="loginmail@gmail.com"
           className={`${
             errors.email && touched.email ? "border-red-500" : ""
-          } ${styles.input} dark:text-white`}
+          } ${styles.input} `}
         />
         {errors.email && touched.email && (
           <span className="text-red-500 pt-2 block">{errors.email}</span>
@@ -110,7 +110,7 @@ const SignUp = ({ setRoute }: Props) => {
 
         <div className="w-full mt-5 relative mb-1">
           <label
-            className={`${styles.label} dark:text-white`}
+            className={`${styles.label} `}
             htmlFor="password"
           >
             Enter your password
@@ -124,17 +124,17 @@ const SignUp = ({ setRoute }: Props) => {
             placeholder="password!@%"
             className={`${
               errors.password && touched.password ? "border-red-500" : ""
-            } ${styles.input} dark:text-white`}
+            } ${styles.input} `}
           />
           {!show ? (
             <AiOutlineEyeInvisible
-              className="absolute bottom-3 right-2 z-1 cursor-pointer dark:text-white text-black"
+              className="absolute bottom-3 right-2 z-1 cursor-pointer  text-black"
               size={20}
               onClick={() => setShow(true)}
             />
           ) : (
             <AiOutlineEye
-              className="absolute bottom-3 right-2 z-1 cursor-pointer dark:text-white text-black"
+              className="absolute bottom-3 right-2 z-1 cursor-pointer  text-black"
               size={20}
               onClick={() => setShow(false)}
             />
@@ -164,17 +164,17 @@ const SignUp = ({ setRoute }: Props) => {
         </div>
 
         <br />
-        <h5 className="text-center pt-4 font-Poppins text-[14px] text-black dark:text-white">
+        <h5 className="text-center pt-4 font-Poppins text-[14px] text-black ">
           Or join with
         </h5>
         <div className="flex items-center justify-center my-3">
           <FcGoogle size={30} className="cursor-pointer mr-2" />
           <AiFillGithub
             size={30}
-            className="cursor-pointer ml-2 dark:text-white text-black"
+            className="cursor-pointer ml-2  text-black"
           />
         </div>
-        <h5 className="text-center pt-4 font-Poppins text-[14px] dark:text-white text-black">
+        <h5 className="text-center pt-4 font-Poppins text-[14px]  text-black">
           Already have an account?{" "}
           <span
             className="text-[#2190ff] pl-1 cursor-pointer"

@@ -74,7 +74,7 @@ const CourseOverview = ({
         return (
           <Accordion
             key={sectionIndex}
-            className=" py-2 mt-2  !dark:bg-opacity-20 "
+            className=" py-2 mt-2"
             onChange={() => handleChange(sectionIndex)}
             sx={{
               bgcolor: `${theme === "dark" ? "#171C24" : "#fff "}`,
@@ -85,9 +85,9 @@ const CourseOverview = ({
             <AccordionSummary
               expandIcon={
                 expanded[sectionIndex] ? (
-                  <HiMinus className="dark:text-[#37a39a] " />
+                  <HiMinus className="" />
                 ) : (
-                  <HiPlus className="dark:text-[#37a39a]" />
+                  <HiPlus className="" />
                 )
               }
               aria-controls="panel1a-content"
@@ -115,7 +115,7 @@ const CourseOverview = ({
                           handleActiveVdo(sectionIndex, lectureIndex)
                         }
                         key={lecture._id}
-                        className="flex items-center gap-3  py-3 pl-2 800px:pl-4 hover:bg-slate-100 dark:hover:bg-opacity-5 rounded"
+                        className="flex items-center gap-3  py-3 pl-2 800px:pl-4 hover:bg-slate-100 rounded"
                       >
                         <OndemandVideoIcon sx={{ color: "#37a39a" }} />
                         <p>{lecture.title}</p>

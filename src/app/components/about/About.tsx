@@ -66,7 +66,7 @@ function About() {
         </div>
       </div>
       <div className='w-[90%] 800px:w-[80%]  mx-auto mt-12 min-h-[70vh]'>
-      <div className="mt-10 dark:text-white text-xl text-black">
+      <div className="mt-10  text-xl text-black">
         <p>
           Are you ready to elevate your programming skills to new heights? Look
           no further than EduSphere, the premier programming community dedicated

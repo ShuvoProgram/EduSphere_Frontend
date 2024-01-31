@@ -43,7 +43,7 @@ const FAQ = () => {
         {data?.data?.faq?.map((q: any, i: any) => (
           <Accordion
             key={i}
-            className=" py-2 mt-2  !dark:bg-opacity-20 "
+            className=" py-2 mt-2  "
             onChange={() => handleChange(i)}
             sx={{
               bgcolor: `${theme === "dark" ? "#171C24" : "#fff "}`,
@@ -54,20 +54,20 @@ const FAQ = () => {
             <AccordionSummary
               expandIcon={
                 expanded[i] ? (
-                  <HiMinus className="dark:text-[#37a39a] text-black" />
+                  <HiMinus className=" text-black" />
                 ) : (
-                  <HiPlus className="dark:text-[#37a39a] text-black" />
+                  <HiPlus className=" text-black" />
                 )
               }
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
-              <p className="font-Poppins dark:text-white text-black">
+              <p className="font-Poppins text-black">
                 {q.question}
               </p>
             </AccordionSummary>
             <AccordionDetails>
-              <p className="font-Poppins dark:text-white text-black">
+              <p className="font-Poppins text-black">
                 {q.answer}
               </p>
             </AccordionDetails>

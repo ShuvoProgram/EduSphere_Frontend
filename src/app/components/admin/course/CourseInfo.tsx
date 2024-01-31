@@ -180,7 +180,7 @@ const CourseInformation: FC<Props> = ({
           />
           <label
             htmlFor="file"
-            className={`w-full min-h-[10vh] dark:border-white border-[#00000026] p-3 border flex items-center justify-center cursor-pointer ${
+            className={`w-full min-h-[10vh]  border-[#00000026] p-3 border flex items-center justify-center cursor-pointer ${
               dragging ? "bg-blue-500" : "bg-transparent"
             }`}
             onDragOver={handleDragOver}
@@ -194,7 +194,7 @@ const CourseInformation: FC<Props> = ({
                 className="max-h-full w-full object-cover"
               />
             ) : (
-              <span className="text-black dark:text-white">
+              <span className="text-black ">
                 Drag and drop your thumbnail here or click to browse
               </span>
             )}

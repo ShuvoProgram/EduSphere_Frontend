@@ -37,7 +37,7 @@ const AllUsers = ({ team = false }: { team?: boolean }) => {
               }}
             >
               <AiOutlineDelete
-                className="dark:text-white text-black"
+                className=" text-black"
                 size={20}
               />
             </Button>

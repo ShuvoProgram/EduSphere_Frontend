@@ -174,13 +174,13 @@ const CourseContent: FC<Props> = ({
                         item.videoSection === "Untitled Section"
                           ? "w-[170px]"
                           : "w-min"
-                      } font-Poppins cursor-pointer dark:text-white text-black bg-transparent outline-none`}
+                      } font-Poppins cursor-pointer text-black bg-transparent outline-none`}
                       value={item.videoSection}
                       onChange={(e) =>
                         handleInputChange(index, "videoSection", e.target.value)
                       }
                     />
-                    <BsPencil className="cursor-pointer dark:text-white text-black" />
+                    <BsPencil className="cursor-pointer text-black" />
                   </div>
                   <br />
                 </>
@@ -189,7 +189,7 @@ const CourseContent: FC<Props> = ({
               <div className="flex w-full items-center justify-between my-0">
                 {isCollapsed[index] ? (
                   item.title ? (
-                    <p className="font-Poppins dark:text-white text-black">
+                    <p className="font-Poppins text-black">
                       {index + 1}. {item.title}
                     </p>
                   ) : (
@@ -201,7 +201,7 @@ const CourseContent: FC<Props> = ({
 
                 <div className="flex items-center">
                   <AiOutlineDelete
-                    className={`dark:text-white text-[20px] mr-2 text-black ${
+                    className={` text-[20px] mr-2 text-black ${
                       index > 0 ? "cursor-pointer" : "cursor-no-drop"
                     }`}
                     onClick={() => {
@@ -214,7 +214,7 @@ const CourseContent: FC<Props> = ({
                   />
                   <MdOutlineKeyboardArrowDown
                     fontSize="large"
-                    className={`dark:text-white text-black`}
+                    className={` text-black`}
                     style={{
                       transform: isCollapsed[index]
                         ? "rotate(180deg)"
@@ -278,7 +278,7 @@ const CourseContent: FC<Props> = ({
                             linkIndex === 0
                               ? "cursor-no-drop"
                               : "cursor-pointer"
-                          } text-black dark:text-white text-[20px]`}
+                          } text-black text-[20px]`}
                           onClick={() => {
                             if (linkIndex !== 0) {
                               handleRemoveLink(index, linkIndex);
@@ -320,7 +320,7 @@ const CourseContent: FC<Props> = ({
                   <br />
                   <div className="inline-block mb-4">
                     <p
-                      className="flex items-center text-[18px] dark:text-white text-black cursor-pointer"
+                      className="flex items-center text-[18px]  text-black cursor-pointer"
                       onClick={() => handleAddLink(index)}
                     >
                       <BsLink45Deg className="mr-2" /> Add Link
@@ -332,7 +332,7 @@ const CourseContent: FC<Props> = ({
               {index === courseContentData.length - 1 && (
                 <div>
                   <p
-                    className="flex items-center text-[18px] dark:text-white text-black cursor-pointer"
+                    className="flex items-center text-[18px]  text-black cursor-pointer"
                     onClick={() => newContentHandler(item)}
                   >
                     <AiOutlinePlusCircle className="mr-2" /> Add New Content
@@ -344,7 +344,7 @@ const CourseContent: FC<Props> = ({
         })}
         <br />
         <div
-          className="flex items-center text-[20px] dark:text-white text-black cursor-pointer"
+          className="flex items-center text-[20px] text-black cursor-pointer"
           onClick={() => addNewSection()}
         >
           <AiOutlinePlusCircle className="mr-2" /> Add new Section
