@@ -27,11 +27,11 @@ export default function RootLayout({ children }: Props) {
     <ReduxProvider>
       <html lang="en">
         <body
-          className={`${josefin.variable} !bg-white bg-no-repeat dark:bg-gradient-to-b dark:from-gray-900 dark:to-black duration-300`}
+          className={`${josefin.variable} !bg-white bg-no-repeat duration-300`}
         >
           <SessionProvider>
 
-            <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            <ThemeProvider attribute="class" enableSystem>
                 <LoaderProvider>{children}</LoaderProvider>
                 <Toaster />
             </ThemeProvider>

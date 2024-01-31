@@ -59,6 +59,11 @@ Banner Area Style
       display: none;
     }
 
+    .pages-banner-content h2 {
+      font-size: 25px;
+      color: #ffffff;
+    }
+
   }
 
 /* Min width 576px to Max width 767px */

@@ -36,7 +36,7 @@ function PageBanner({
 	};
   return (
     <>
-    <div className="pages-banner-area pt-[100px] pb-[100px]">
+    <div className="pages-banner-area pt-[80px] pb-[80px] md:pt-[100px] md:pb-[100px]">
 				<div className="container">
 					<div className="pages-banner-content">
 						<motion.h2
