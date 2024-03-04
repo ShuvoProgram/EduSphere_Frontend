@@ -9,14 +9,15 @@ type Props = {
 };
 
 const CoursePlayer: FC<Props> = ({ videoUrl, hasAccess }) => {
+  // State variables
   const [videoData, setVideoData] = useState({
     otp: "",
     playbackInfo: "",
   });
-
   const { user }: any = useAppSelector((state) => state.auth);
-  const [api, setApi] = useState(false);
+  const [apiCalled, setApiCalled] = useState(false);
 
+  // Fetch data from API
   const fetchData = useCallback(() => {
     axios
       .post(
@@ -27,29 +28,28 @@ const CoursePlayer: FC<Props> = ({ videoUrl, hasAccess }) => {
         }
       )
       .then((res) => {
-        setApi(true);
+        setApiCalled(true);
         setVideoData(res.data);
       })
       .catch((error) => {
+        // Retry after 1 second on failure
         setTimeout(fetchData, 1000);
       });
   }, [videoUrl, user, hasAccess]);
 
+  // Fetch data when component mounts or when API is not called yet
   useEffect(() => {
-    // if (!api) {
-    fetchData();
-    // }
-  }, [fetchData, api, videoUrl]);
-
-  // console.log(videoData)
+    if (!apiCalled) {
+      fetchData();
+    }
+  }, [fetchData, apiCalled, videoUrl]);
 
   return (
-    <div
-      style={{ paddingTop: "56.25%", position: "relative", overflow: "hidden" }}
-    >
+    <div style={{ paddingTop: "56.25%", position: "relative", overflow: "hidden" }}>
+      {/* Render video player if video data is available */}
       {videoData.otp && videoData.playbackInfo && (
         <iframe
-          src={`https://player.vdocipher.com/v2/?otp=${videoData.otp}&playbackInfo=${videoData.playbackInfo}&player=6fb1aEnUw6jljnRl`}
+          src={`https://player.vdocipher.com/v2/?otp=${videoData.otp}&playbackInfo=${videoData.playbackInfo}&player=4EP4NLiWKX1Sxys0`}
           style={{
             border: 0,
             width: "100%",
